@@ -7,7 +7,7 @@ import {
 } from '@shopify/hydrogen';
 import gql from 'graphql-tag';
 
-import Layout from '../components/Layout.server';
+import Layout from '../../components/layouts/Layout.server';
 import FeaturedCollection from '../components/FeaturedCollection.server';
 import ProductCard from '../components/ProductCard.server';
 import Welcome from '../components/Welcome.server';

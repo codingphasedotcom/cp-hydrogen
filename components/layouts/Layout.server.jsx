@@ -6,11 +6,11 @@ import {
 } from '@shopify/hydrogen';
 import gql from 'graphql-tag';
 
-import Header from './Header.client';
-import Footer from './Footer.server';
-import {useCartUI} from './CartUIProvider.client';
-import Cart from './Cart.client';
-import Collection1 from '../../components/Collections/Collection1/Collection1';
+import Header from '../../src/components/Header.client';
+import Footer from '../../src/components/Footer.server';
+import {useCartUI} from '../../src/components/CartUIProvider.client';
+import Cart from '../../src/components/Cart.client';
+// import Collection1 from '../../components/Collections/Collection1/Collection1';
 
 export default function Layout({children, hero}) {
   const {data} = useShopQuery({
@@ -30,15 +30,8 @@ export default function Layout({children, hero}) {
 
   return (
     <LocalizationProvider>
-      <div className="absolute top-0 left-0">
-        <a
-          href="#mainContent"
-          className="p-4 focus:block sr-only focus:not-sr-only"
-        >
-          Skip to content
-        </a>
-      </div>
-      <div className="min-h-screen max-w-screen text-gray-700 font-sans">
+      
+      <div className="fixed-nav transparent-nav">
         <Header collections={collections} storeName={storeName} />
         {/* eslint-disable-next-line @shopify/jsx-prefer-fragment-wrappers */}
         <div>
@@ -50,13 +43,13 @@ export default function Layout({children, hero}) {
           />
           <Cart />
         </div>
-        <main role="main" id="mainContent" className="relative bg-gray-50">
+        <main >
           {hero}
           <div className="mx-auto max-w-7xl p-4 md:py-5 md:px-8">
             {children}
           </div>
         </main>
-        <Collection1 />
+        {/* <Collection1 /> */}
 
         <Footer collection={collections[0]} product={products[0]} />
       </div>
