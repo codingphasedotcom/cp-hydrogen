@@ -19,7 +19,6 @@ async function createServer() {
       index: false,
     }),
   );
-
   app.use(
     '*',
     hydrogenMiddleware({
