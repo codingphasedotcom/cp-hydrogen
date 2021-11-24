@@ -45,9 +45,8 @@ export default function Layout({children, hero}) {
         </div>
         <main >
           {hero}
-          <div className="mx-auto max-w-7xl p-4 md:py-5 md:px-8">
-            {children}
-          </div>
+          {children}
+            
         </main>
         {/* <Collection1 /> */}
 
