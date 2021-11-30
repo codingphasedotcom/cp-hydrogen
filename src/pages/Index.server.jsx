@@ -9,6 +9,7 @@ import gql from 'graphql-tag';
 
 import Layout from '../../components/layouts/Layout.server';
 import Hero2 from '../../components/Hero/Hero2/Hero2';
+import Collection1 from '../../components/Collections/Collection1/Collection1';
 import FeaturedCollection from '../components/FeaturedCollection.server';
 import ProductCard from '../components/ProductCard.server';
 import Welcome from '../components/Welcome.server';
@@ -23,7 +24,9 @@ export default function Index({country = {isoCode: 'US'}}) {
 
   const collections = data ? flattenConnection(data.collections) : [];
   const Hero2Collections = collections.filter((item) => item.handle == 'men' || item.handle == 'women')
-  console.log(Hero2Collections)
+  
+  const MostPopularProducts = data ? flattenConnection(data.products) : [];
+  console.log(MostPopularProducts)
   const featuredProductsCollection = collections[0];
   const featuredProducts = featuredProductsCollection
     ? flattenConnection(featuredProductsCollection.products)
@@ -34,8 +37,14 @@ export default function Index({country = {isoCode: 'US'}}) {
   return (
     <Layout>
       <Hero2 collectionsData={Hero2Collections} />
+      <div className="row">
+        <div className="container">
+          <h2 className="home-page__h2">Most Popular Products</h2>
+        </div>
+      </div>
+      <Collection1 popularProductsData={MostPopularProducts}/>
 
-      <div className="relative mb-12">
+      {/* <div className="relative mb-12">
         <Welcome />
         <div className="bg-white p-12 shadow-xl rounded-xl mb-10">
           {featuredProductsCollection ? (
@@ -72,7 +81,7 @@ export default function Index({country = {isoCode: 'US'}}) {
           ) : null}
         </div>
         <FeaturedCollection collection={featuredCollection} />
-      </div>
+      </div> */}
     </Layout>
   );
 }
@@ -109,6 +118,31 @@ const QUERY = gql`
             }
           }
         }
+      }
+    }
+    products(first: 9, sortKey: BEST_SELLING) {
+      edges {
+          cursor
+          node {
+              id
+              title
+              description
+              handle
+              featuredImage{
+              	url
+              }
+              variants(first: 3) {
+                  edges {
+                      cursor
+                      node {
+                          id
+                          title
+                          price
+                        	
+                      }
+                  }
+              }
+          }
       }
     }
   }

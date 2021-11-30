@@ -9,7 +9,7 @@ import {useParams} from 'react-router-dom';
 import gql from 'graphql-tag';
 
 import LoadMoreProducts from '../../components/LoadMoreProducts.client';
-import Layout from '../../components/Layout.server';
+import Layout from '../../../components/layouts/Layout.server';
 import ProductCard from '../../components/ProductCard.server';
 import NotFound from '../../components/NotFound.server';
 
