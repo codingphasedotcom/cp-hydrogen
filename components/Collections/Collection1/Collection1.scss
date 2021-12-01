@@ -91,18 +91,25 @@
     width: 20px;
     height: 20px;
     margin-right: 5px;
-    
+    &--white{
+      background: white;
+      border: 1px solid black;
+    }
     &--black{
       background: black;
+      border: 1px solid black;
     }
     &--blue{
       background: blue;
+      border: 1px solid black;
     }
     &--red{
       background: red;
+      border: 1px solid black;
     }
     &--yellow{
       background: yellow;
+      border: 1px solid black;
     }
   }
 }

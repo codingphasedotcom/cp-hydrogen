@@ -26,7 +26,7 @@ export default function Index({country = {isoCode: 'US'}}) {
   const Hero2Collections = collections.filter((item) => item.handle == 'men' || item.handle == 'women')
   
   const MostPopularProducts = data ? flattenConnection(data.products) : [];
-  console.log(MostPopularProducts)
+  // console.log(MostPopularProducts)
   const featuredProductsCollection = collections[0];
   const featuredProducts = featuredProductsCollection
     ? flattenConnection(featuredProductsCollection.products)
@@ -42,7 +42,7 @@ export default function Index({country = {isoCode: 'US'}}) {
           <h2 className="home-page__h2">Most Popular Products</h2>
         </div>
       </div>
-      <Collection1 popularProductsData={MostPopularProducts}/>
+      <Collection1 popularProductsData={MostPopularProducts} columns={1}/>
 
       {/* <div className="relative mb-12">
         <Welcome />
