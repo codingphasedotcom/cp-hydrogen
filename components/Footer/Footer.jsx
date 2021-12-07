@@ -1,4 +1,6 @@
 export default function Footer(props) {
+
+	const currentYear = new Date().getFullYear();
 	return (
 		<footer className={"footer"}>
 			<div className={"container"}>
@@ -9,42 +11,40 @@ export default function Footer(props) {
 								<div className="footer__links">
 									<span className="footer__column-title">Get Help</span>
 									<a href="#" className="footer__link">
-										Link
+									Help Center
 									</a>
 									<a href="#" className="footer__link">
-										Link
+									Track Order
 									</a>
 									<a href="#" className="footer__link">
-										Link
+									Shipping Info
 									</a>
 								</div>
 							</div>
 							<div className="col-md-2">
 								<div className="footer__links">
-									<span className="footer__column-title">Get Help</span>
+									<span className="footer__column-title">Company</span>
 									<a href="#" className="footer__link">
-										Link
+										Careers
 									</a>
 									<a href="#" className="footer__link">
-										Link
+										About
 									</a>
 									<a href="#" className="footer__link">
-										Link
+										Stores
 									</a>
 								</div>
 							</div>
 							<div className="col-md-2">
 								<div className="footer__links">
-									<span className="footer__column-title">Get Help</span>
+									<span className="footer__column-title">Quick Links</span>
 									<a href="#" className="footer__link">
-										Link
+										Size Guide
 									</a>
 									<a href="#" className="footer__link">
-										Link
+										Gift Cards
 									</a>
-									<a href="#" className="footer__link">
-										Link
-									</a>
+									
 								</div>
 							</div>
 						</div>
@@ -87,12 +87,12 @@ export default function Footer(props) {
           <div className="col-md-12">
             <div className="footer__bottom">
               <div className="footer__copyright">
-								&copy; 2021 StoreName, LLC All Rights Reserved
+								&copy; {currentYear} CPLUX, LLC All Rights Reserved
               </div>
               <div className="footer__extra-links">
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
+                <a href="#">Promo T&Cs</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
               </div>
             </div>
           </div>

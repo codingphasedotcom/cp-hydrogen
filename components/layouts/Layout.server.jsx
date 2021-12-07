@@ -7,7 +7,7 @@ import {
 import gql from 'graphql-tag';
 
 import Header from '../../src/components/Header.client';
-import Footer from '../../src/components/Footer.server';
+import Footer from '../../components/Footer/Footer';
 import {useCartUI} from '../../src/components/CartUIProvider.client';
 import Cart from '../../src/components/Cart.client';
 import Collection1 from '../../components/Collections/Collection1/Collection1';
@@ -57,7 +57,7 @@ export default function Layout({children, hero}) {
         </main>
         
 
-        <Footer collection={collections[0]} product={products[0]} />
+        <Footer />
       </div>
     </LocalizationProvider>
   );
