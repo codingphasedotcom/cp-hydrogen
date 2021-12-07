@@ -131,7 +131,7 @@ const QUERY = gql`
               featuredImage{
               	url
               }
-              variants(first: 3) {
+              variants(first: 20) {
                   edges {
                       cursor
                       node {

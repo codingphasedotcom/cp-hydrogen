@@ -91,6 +91,7 @@
     width: 20px;
     height: 20px;
     margin-right: 5px;
+    border: 1px solid black;
     
     &--black{
       background: black;
@@ -103,6 +104,9 @@
     }
     &--yellow{
       background: yellow;
+    }
+    &--white{
+      background: white;
     }
   }
 }
