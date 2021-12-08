@@ -11,6 +11,7 @@ import Footer from '../../components/Footer/Footer';
 import {useCartUI} from '../../src/components/CartUIProvider.client';
 import Cart from '../../src/components/Cart.client';
 import Collection1 from '../../components/Collections/Collection1/Collection1';
+import Header3 from '../../components/Header/Header3/Header3';
 
 export default function Layout({children, hero}) {
   const {data} = useShopQuery({
@@ -39,7 +40,7 @@ export default function Layout({children, hero}) {
         </a>
       </div>
       <div className="min-h-screen max-w-screen text-gray-700 font-sans">
-        <Header collections={collections} storeName={storeName} />
+        <Header3 storeName={storeName} />
         {/* eslint-disable-next-line @shopify/jsx-prefer-fragment-wrappers */}
         <div>
           <div

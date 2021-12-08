@@ -23,11 +23,14 @@
     }
   }
   &__collection-link{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out .3s;
     
     .collection-link__sub-links{
+      z-index: 5;
       visibility: hidden;
       opacity: 0;
       background: white;
@@ -35,8 +38,10 @@
       position: absolute;
       padding: 20px 0;
       min-width: 150px;
-      top: 20px;
-      left: 0;
+      margin-top: 30px;
+      top: 0;
+      left: -50px;
+      transition: all .3s ease-in-out .1s;
       
       a{
         color: #2c2952 ;
@@ -49,7 +54,7 @@
       }
     }
     &:hover{
-      
+      opacity: 1;
       .collection-link__sub-links{
         visibility: visible;
         opacity: 1;
