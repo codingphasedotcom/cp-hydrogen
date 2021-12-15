@@ -109,3 +109,20 @@
     }
   }
 }
+@media only screen and (max-width: 600px) {
+  .hero2 .hero2__collection1 .hero2__content-container, .hero2 .hero2__collection2 .hero2__content-container {
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .hero2__content-container {
+    padding-bottom: 0;
+  }
+  .hero2__button {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

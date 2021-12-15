@@ -23,7 +23,11 @@ export default function Product({country = {isoCode: 'US'}}) {
 
   return (
     <Layout>
-      <ProductDetails product={data.product} />
+      <div className='container'>
+
+      
+        <ProductDetails product={data.product} />
+      </div>
     </Layout>
   );
 }

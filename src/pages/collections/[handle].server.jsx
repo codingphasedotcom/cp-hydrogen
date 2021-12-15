@@ -37,6 +37,7 @@ export default function Collection({
 
   return (
     <Layout>
+      <div className="container">
       <h1 className="font-bold text-4xl md:text-5xl text-gray-900 mb-6 mt-6">
         {collection.title}
       </h1>
@@ -56,6 +57,7 @@ export default function Collection({
       {hasNextPage && (
         <LoadMoreProducts startingCount={collectionProductCount} />
       )}
+      </div>
     </Layout>
   );
 }

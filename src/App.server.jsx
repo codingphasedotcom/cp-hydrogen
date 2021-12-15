@@ -8,12 +8,13 @@ import DefaultSeo from './components/DefaultSeo.server';
 import NotFound from './components/NotFound.server';
 import CartProvider from './components/CartProvider.client';
 import LoadingFallback from './components/LoadingFallback';
+import LoadingLayout from '../components/layouts/LoadingLayout';
 
 export default function App({...serverState}) {
   const pages = import.meta.globEager('./pages/**/*.server.[jt]sx');
 
   return (
-    <Suspense fallback={<LoadingFallback />}>
+    <Suspense fallback={<LoadingLayout />}>
       <ShopifyServerProvider shopifyConfig={shopifyConfig} {...serverState}>
         <CartProvider>
           <DefaultSeo />

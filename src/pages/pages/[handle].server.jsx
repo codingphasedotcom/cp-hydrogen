@@ -17,8 +17,10 @@ export default function Page() {
 
   return (
     <Layout>
+      <div className='container'>
       <h1 className="text-2xl font-bold">{page.title}</h1>
       <RawHtml string={page.body} className="prose mt-8" />
+      </div>
     </Layout>
   );
 }
