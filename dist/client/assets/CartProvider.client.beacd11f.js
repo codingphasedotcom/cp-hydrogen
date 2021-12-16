@@ -1,2 +1,0 @@
-import{j as r,a as n,F as i,k as s}from"./vendor.84248098.js";import d,{useCartUI as c}from"./CartUIProvider.client.0837ea4c.js";function p({children:e,numCartLines:t}){return r(d,{children:r(C,{numCartLines:t,children:e})})}function C({children:e,numCartLines:t}){const{openCart:o}=c(),a=n.exports.useCallback(()=>{o()},[o]);return r(i,{children:r(s,{numCartLines:t,onLineAdd:a,onCreate:a,children:e})})}export{p as default};
-//# sourceMappingURL=CartProvider.client.beacd11f.js.map

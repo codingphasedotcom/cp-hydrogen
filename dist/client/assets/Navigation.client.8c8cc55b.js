@@ -1,2 +1,0 @@
-import{j as e,c as i}from"./vendor.84248098.js";function l({collections:t}){return e("nav",{className:"hidden lg:block text-center",children:e("ul",{className:"md:flex items-center justify-center",children:t.map(a=>e("li",{children:e(i,{to:`/collections/${a.handle}`,className:"block p-4 hover:opacity-80",children:a.title})},a.id))})})}export{l as default};
-//# sourceMappingURL=Navigation.client.8c8cc55b.js.map
