@@ -14,7 +14,7 @@
     "build:server": "vite build --outDir dist/server --ssr src/entry-server.jsx",
     "build:worker": "WORKER=true vite build --outDir dist/worker --ssr worker.js",
     "serve": "node --enable-source-maps server",
-    "heroku": "npm run build:client && npm run build:server && npm run build:worker && npm run serve"
+    "heroku": "npm run build:client && npm run build:server && npm run build:worker && node server.js"
   },
   "prettier": "@shopify/prettier-config",
   "devDependencies": {

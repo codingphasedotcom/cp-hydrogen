@@ -1,0 +1,229 @@
+{
+  "index.html": {
+    "file": "assets/index.2c1cb27a.js",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "_vendor.84248098.js"
+    ],
+    "css": [
+      "assets/index.3095648e.css"
+    ]
+  },
+  "_vendor.84248098.js": {
+    "file": "assets/vendor.84248098.js",
+    "dynamicImports": [
+      "node_modules/@shopify/hydrogen/dist/esnext/components/LocalizationProvider/LocalizationClientProvider.client.js",
+      "src/components/Button.client.jsx",
+      "src/components/Cart.client.jsx",
+      "src/components/CartIconWithItems.client.jsx",
+      "src/components/CartProvider.client.jsx",
+      "src/components/CartToggle.client.jsx",
+      "src/components/CartUIProvider.client.jsx",
+      "_CurrencySelector.client.2d497a17.js",
+      "src/components/Gallery.client.jsx",
+      "src/components/Header.client.jsx",
+      "src/components/LoadMoreProducts.client.jsx",
+      "src/components/MobileCurrencySelector.client.jsx",
+      "src/components/MobileNavigation.client.jsx",
+      "src/components/MoneyCompareAtPrice.client.jsx",
+      "src/components/MoneyPrice.client.jsx",
+      "src/components/Navigation.client.jsx",
+      "src/components/ProductDetails.client.jsx",
+      "src/components/ProductOptions.client.jsx",
+      "src/components/Seo.client.jsx"
+    ]
+  },
+  "node_modules/@shopify/hydrogen/dist/esnext/components/LocalizationProvider/LocalizationClientProvider.client.js": {
+    "file": "assets/LocalizationClientProvider.client.41b740fa.js",
+    "src": "node_modules/@shopify/hydrogen/dist/esnext/components/LocalizationProvider/LocalizationClientProvider.client.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js"
+    ]
+  },
+  "src/components/Button.client.jsx": {
+    "file": "assets/Button.client.cd98f033.js",
+    "src": "src/components/Button.client.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js"
+    ]
+  },
+  "src/components/Cart.client.jsx": {
+    "file": "assets/Cart.client.0c65f35e.js",
+    "src": "src/components/Cart.client.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js",
+      "src/components/CartUIProvider.client.jsx",
+      "src/components/CartIconWithItems.client.jsx",
+      "src/components/Button.client.jsx",
+      "_open-closed.esm.aa47f60b.js",
+      "_use-focus-trap.esm.177adad9.js"
+    ]
+  },
+  "src/components/CartUIProvider.client.jsx": {
+    "file": "assets/CartUIProvider.client.0837ea4c.js",
+    "src": "src/components/CartUIProvider.client.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js"
+    ]
+  },
+  "src/components/CartIconWithItems.client.jsx": {
+    "file": "assets/CartIconWithItems.client.6376d072.js",
+    "src": "src/components/CartIconWithItems.client.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js"
+    ]
+  },
+  "_open-closed.esm.aa47f60b.js": {
+    "file": "assets/open-closed.esm.aa47f60b.js",
+    "imports": [
+      "_vendor.84248098.js"
+    ]
+  },
+  "_use-focus-trap.esm.177adad9.js": {
+    "file": "assets/use-focus-trap.esm.177adad9.js",
+    "imports": [
+      "_open-closed.esm.aa47f60b.js",
+      "_vendor.84248098.js"
+    ]
+  },
+  "src/components/CartProvider.client.jsx": {
+    "file": "assets/CartProvider.client.beacd11f.js",
+    "src": "src/components/CartProvider.client.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js",
+      "src/components/CartUIProvider.client.jsx"
+    ]
+  },
+  "src/components/CartToggle.client.jsx": {
+    "file": "assets/CartToggle.client.5cd0acc9.js",
+    "src": "src/components/CartToggle.client.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/components/CartUIProvider.client.jsx",
+      "src/components/CartIconWithItems.client.jsx",
+      "_vendor.84248098.js"
+    ]
+  },
+  "_CurrencySelector.client.2d497a17.js": {
+    "file": "assets/CurrencySelector.client.2d497a17.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js",
+      "_open-closed.esm.aa47f60b.js"
+    ]
+  },
+  "src/components/Gallery.client.jsx": {
+    "file": "assets/Gallery.client.71848000.js",
+    "src": "src/components/Gallery.client.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js"
+    ]
+  },
+  "src/components/Header.client.jsx": {
+    "file": "assets/Header.client.74338823.js",
+    "src": "src/components/Header.client.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js",
+      "src/components/CartToggle.client.jsx",
+      "_CurrencySelector.client.2d497a17.js",
+      "src/components/Navigation.client.jsx",
+      "src/components/MobileNavigation.client.jsx",
+      "src/components/CartUIProvider.client.jsx",
+      "src/components/CartIconWithItems.client.jsx",
+      "_open-closed.esm.aa47f60b.js",
+      "src/components/MobileCurrencySelector.client.jsx",
+      "_use-focus-trap.esm.177adad9.js"
+    ]
+  },
+  "src/components/Navigation.client.jsx": {
+    "file": "assets/Navigation.client.8c8cc55b.js",
+    "src": "src/components/Navigation.client.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js"
+    ]
+  },
+  "src/components/MobileNavigation.client.jsx": {
+    "file": "assets/MobileNavigation.client.5e81ddff.js",
+    "src": "src/components/MobileNavigation.client.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js",
+      "src/components/MobileCurrencySelector.client.jsx",
+      "_open-closed.esm.aa47f60b.js",
+      "_use-focus-trap.esm.177adad9.js",
+      "_CurrencySelector.client.2d497a17.js"
+    ]
+  },
+  "src/components/MobileCurrencySelector.client.jsx": {
+    "file": "assets/MobileCurrencySelector.client.c54aeb62.js",
+    "src": "src/components/MobileCurrencySelector.client.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js",
+      "_CurrencySelector.client.2d497a17.js",
+      "_open-closed.esm.aa47f60b.js"
+    ]
+  },
+  "src/components/LoadMoreProducts.client.jsx": {
+    "file": "assets/LoadMoreProducts.client.ac49111a.js",
+    "src": "src/components/LoadMoreProducts.client.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js"
+    ]
+  },
+  "src/components/MoneyCompareAtPrice.client.jsx": {
+    "file": "assets/MoneyCompareAtPrice.client.a2e5b480.js",
+    "src": "src/components/MoneyCompareAtPrice.client.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js"
+    ]
+  },
+  "src/components/MoneyPrice.client.jsx": {
+    "file": "assets/MoneyPrice.client.cf7f7ab9.js",
+    "src": "src/components/MoneyPrice.client.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js"
+    ]
+  },
+  "src/components/ProductDetails.client.jsx": {
+    "file": "assets/ProductDetails.client.02f7bd93.js",
+    "src": "src/components/ProductDetails.client.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js",
+      "src/components/ProductOptions.client.jsx",
+      "src/components/Gallery.client.jsx",
+      "src/components/Seo.client.jsx",
+      "src/components/Button.client.jsx"
+    ]
+  },
+  "src/components/ProductOptions.client.jsx": {
+    "file": "assets/ProductOptions.client.fd502d45.js",
+    "src": "src/components/ProductOptions.client.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js"
+    ]
+  },
+  "src/components/Seo.client.jsx": {
+    "file": "assets/Seo.client.63d6b49d.js",
+    "src": "src/components/Seo.client.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.84248098.js"
+    ]
+  }
+}

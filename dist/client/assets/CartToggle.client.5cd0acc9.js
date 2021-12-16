@@ -1,0 +1,2 @@
+import{useCartUI as n}from"./CartUIProvider.client.0837ea4c.js";import s from"./CartIconWithItems.client.6376d072.js";import{b as c,j as r}from"./vendor.84248098.js";function m({handleClick:e}){const t=n();if(t==null)throw new Error("CartToggle must be a descendent of a CartUIProvider");const{isCartOpen:a,toggleCart:o}=t;return c("button",{type:"button","aria-expanded":a,"aria-controls":"cart",onClick:()=>{o(),e()},children:[r(s,{}),r("span",{className:"sr-only",children:"Open cart"})]})}export{m as default};
+//# sourceMappingURL=CartToggle.client.5cd0acc9.js.map
